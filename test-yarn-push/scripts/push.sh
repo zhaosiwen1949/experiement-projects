@@ -11,7 +11,7 @@ git_status=$(git status 2> /dev/null | tail -n1) || $(git status 2> /dev/null | 
 # 如果没有，则抛错
 
 if [[ "$git_remote_branch" != "" ]]; then
-  if [[ "$git_status" != "无文件要提交，干净的工作区" ]]; then
+  if [[ "$git_status" != "无文件要提交，干净的工作区" -a "$git_status" != "nothing to commit, working tree clean" ]]; then
     git add -A;
     git commit -m "自动触发yarn build，生成提交文件";
   fi
