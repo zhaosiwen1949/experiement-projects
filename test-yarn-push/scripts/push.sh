@@ -15,7 +15,7 @@ if [[ "$git_remote_branch" != "" ]]; then
     git add -A;
     git commit -m "自动触发yarn build，生成提交文件";
   fi
-  git push origin HEAD:refs/for/$git_remote_branch;
+  git push origin HEAD:$git_remote_branch;
 else
   exit 1;
 fi

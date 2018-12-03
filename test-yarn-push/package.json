@@ -61,7 +61,7 @@
     "test": "jest --coverage --coverageDirectory=output/jest/coverage",
     "lint": "./node_modules/eslint/bin/eslint.js src",
     "lint-ci": "./node_modules/eslint/bin/eslint.js src -f node_modules/eslint-detailed-reporter/lib/detailed.js -o Eslint_Report.html || (echo 'Error in eslint report, potentially fixable with the '--fix' option or manually fix it.' && exit 1) ",
-    "push": "yarn test && yarn lint-ci && yarn build && sh scripts/push.sh"
+    "push": "yarn test && yarn lint-ci && yarn build && bash scripts/push.sh"
   },
   "eslintConfig": {
     "extends": "react-app"
