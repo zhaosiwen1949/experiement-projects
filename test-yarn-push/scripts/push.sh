@@ -3,7 +3,7 @@
 # 首先需要检测当前目录的状态，是否有新的文件需要commit
 # 同时需要获取相应的远程分支
 
-git_remote_branch=$(git status 2>/dev/null | grep -oP "(?<=您的分支领先 'origin/).*(?=')");
+git_remote_branch=$(git status 2>/dev/null | grep -oP "(?<='origin/).*(?=')");
 git_status=$(git status 2> /dev/null | tail -n1) || $(git status 2> /dev/null | head -n 2 | tail -n1);
 
 # 检查是否有远程分支
