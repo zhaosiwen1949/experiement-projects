@@ -1,0 +1,20 @@
+.red {
+  background: red;
+  &:hover {
+    background: red;
+  }
+}
+
+.yellow {
+  background: yellow;
+  &:hover {
+    background: red;
+  }
+}
+
+.green {
+  background: green;
+  &:hover {
+    background: red;
+  }
+}

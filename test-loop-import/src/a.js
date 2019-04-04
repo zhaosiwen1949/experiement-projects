@@ -9,7 +9,7 @@ import b from './b';
 // export const foo = 'foo';
 // export const bar = 'bar';
 
-b();
+// b();
 // console.log(b)
 
 export const foo = () => {
@@ -19,6 +19,7 @@ export const bar = () => {
   console.log('bar');
 };
 
+b();
 // export function foo() {
 //   console.log('foo');
 // };
